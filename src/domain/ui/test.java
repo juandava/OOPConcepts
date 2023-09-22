@@ -1,15 +1,15 @@
 package src.domain.ui;
 
+import src.domain.model.Rect;
 import src.domain.model.Shape;
 import src.domain.model.Square;
 
 public class test {
     public static void main (String[] args){
-        var Square = new Square(); //constructor - Instancia
-        Square.setX(50);
-        Square.setWidth(-100);
-        System.out.println(Square.getWidth());
-        System.out.println(Square.getX());
+        var Rect = new Rect(); //constructor - Instancia
+        Rect.setWidth(-100);
+        System.out.println(Rect.getWidth());
+        System.out.println(Rect.getX());
 
 
         //var Shape1 = new Shape(-200,10);

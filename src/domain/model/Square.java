@@ -9,5 +9,11 @@ public class Square extends Shape {
         if (newWidth >= 0)
             Width = newWidth;
     }
+    public int getHeight (){
+        return getWidth();
+    }
+    public void setHeight (int newHeight){
+        setWidth(newHeight);
+    }
 
 }
