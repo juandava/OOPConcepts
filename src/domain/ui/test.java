@@ -1,28 +1,21 @@
 package src.domain.ui;
 
-import src.domain.model.Rect;
-import src.domain.model.Shape;
-import src.domain.model.Square;
+import src.domain.model.*;
 
 public class test {
     public static void main (String[] args){
-        var Rect = new Rect(); //constructor - Instancia
-        Rect.setWidth(-100);
-        System.out.println(Rect.getWidth());
-        System.out.println(Rect.getX());
-
-
-        //var Shape1 = new Shape(-200,10);
-        //var Shape2 = new Shape(20,1500);
-        //System.out.println("Ins #1 x = "+Shape1.x+ " y = "+Shape1.y);
-        //System.out.println("Ins #2 x = "+Shape2.x+ " y = "+Shape2.y);
-
-        //System.out.println("Sum Ins#1 = "+Shape1.getAdd());
-        //System.out.println("Sum Ins#2 = "+Shape2.getAdd());
-
-        //Shape1.setX(-200);
-        //System.out.println(Shape1.getX());
-
+        var shapes = new Shape[]{
+                new Rect (10, 20),
+                new Circle (20),
+                new Square(15),
+                new Elipse (5, 10),
+                new Square(10),
+        };
+        var sumArea=0;
+        for (Shape s: shapes){
+            sumArea=s.getArea();
+        }
+        var avgArea = sumArea/ shapes.length;
+        System.out.println("Area promedio: " +avgArea);
     }
-
 }
