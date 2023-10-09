@@ -10,6 +10,7 @@ public class test {
                 new Square(15),
                 new Elipse (5, 10),
                 new Square(10),
+                new Triangle(10,20,13,15,34),
         };
         var sumArea=0;
         for (Shape s: shapes){
