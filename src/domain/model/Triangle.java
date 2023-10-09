@@ -38,5 +38,18 @@ public class Triangle extends Shape{
         return (int) (getSideSize1() + getSideSize2() + getSideSize3());
     }
 
+    public  Triangle (int newX, int newY, int newsideSize1,int newsideSize2, int newsideSize3){
+        super(newX,newY);
+        setSideSize1 (newsideSize1);
+        setSideSize2(newsideSize2);
+        setSideSize3(newsideSize3);
+
+
+    }
+    public Triangle (int newsideSize1, int newsideSize2, int newsideSize3){
+        this (0,0,newsideSize1, newsideSize2, newsideSize3);
+    }
+
+
 
 }
